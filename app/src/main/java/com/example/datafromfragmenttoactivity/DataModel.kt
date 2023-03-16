@@ -1,8 +1,9 @@
 package com.example.datafromfragmenttoactivity
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
-open class DataModel {
+open class DataModel : ViewModel() {
     val messageForActivityOneFragment: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
